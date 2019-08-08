@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+isort --recursive --check-only sqlalchemy_customtypes_test tests
+if [ $? -ne 0 ]; then
+  echo "[!] isort failed! Run 'isort -rc -y sqlalchemy_customtypes_test tests'"
+  exit 1
+fi
+echo "[+] isort success!"
+
+black -S -l 79 --check sqlalchemy_customtypes_test tests
+if [ $? -ne 0 ]; then
+  echo "[!] black failed! Run 'black -S -l 79 sqlalchemy_customtypes_test tests'"
+  exit 1
+fi
+echo "[+] black success!"
+
+pylint sqlalchemy_customtypes_test
+if [ $? -ne 0 ]; then
+  echo "[!] pylint failed! Please fix code before push"
+  exit 1
+fi
+echo "[+] pylint success!"
+
+
+
+exit 0
