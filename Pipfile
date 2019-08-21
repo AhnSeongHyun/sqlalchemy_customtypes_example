@@ -11,6 +11,10 @@ pytest = "==4.6.3"
 pytest-cov = "==2.7.1"
 
 [packages]
+flask = "*"
+flask-sqlalchemy = "*"
+pymysql = "*"
+pycryptodome = "*"
 
 [requires]
 python_version = "3.7"

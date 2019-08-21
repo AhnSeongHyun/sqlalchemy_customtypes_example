@@ -4,7 +4,9 @@
 
 ## Getting Started
 
-<!-- TODO: Describe how to prepare to use this project -->
+```
+python3 -m app 
+```
 
 ### Installation
 
@@ -24,11 +26,3 @@ $ make test
 
 <!-- TODO: Describe stack of this project -->
 * [Pipenv](https://github.com/pypa/pipenv) - 의존성 관리
-
-## Related Documents
-
-<!-- TODO: Insert related documents here-->
-
-## License
-
-<!-- TODO: If you want, set license information here-->

@@ -5,22 +5,22 @@ init:
 	pipenv install --dev
 
 check:
-	isort --recursive --check-only sqlalchemy_customtypes_test tests
-	black -S -l 79 --check sqlalchemy_customtypes_test tests
-	pylint sqlalchemy_customtypes_test
+	isort --recursive --check-only app tests
+	black -S -l 79 --check app tests
+	pylint app
 
 format:
-	isort -rc -y sqlalchemy_customtypes_test tests
-	black -S -l 79 sqlalchemy_customtypes_test tests
+	isort -rc -y app tests
+	black -S -l 79 app tests
 
 test:
 	python -m pytest
 
 coverage:
-	python -m pytest --cov sqlalchemy_customtypes_test --cov-report term --cov-report xml
+	python -m pytest --cov app --cov-report term --cov-report xml
 
 htmlcov:
-	python -m pytest --cov sqlalchemy_customtypes_test --cov-report html
+	python -m pytest --cov app --cov-report html
 	rm -rf /tmp/htmlcov && mv htmlcov /tmp/
 	open /tmp/htmlcov/index.html
 
