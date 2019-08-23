@@ -12,4 +12,4 @@ def insert(user_name: str, birthday: str, phone_number: str) -> None:
 
 
 def get(user_id: int) -> Optional[User]:
-    return User.filter_by(user_id=user_id).scalar()
+    return User.query.filter_by(user_id=user_id).scalar()
