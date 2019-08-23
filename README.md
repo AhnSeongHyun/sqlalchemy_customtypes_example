@@ -1,4 +1,4 @@
-# sqlalchemy_customtypes_test
+# sqlalchemy_customtypes_example
 
 [![Python Version: 3.7](https://badgen.net/badge/python/3.7/blue)](https://docs.python.org/3.7/)&nbsp;[![Code Style: Black](https://badgen.net/badge/code%20style/black/black)](https://github.com/ambv/black)
 
