@@ -1,9 +1,7 @@
-from sqlalchemy import BigInteger, Column, String, event
-from sqlalchemy.types import VARCHAR, TypeDecorator
+from sqlalchemy import BigInteger, Column, String
 
-from .crypto import decrypt, encrypt
+from .crypto import decrypt
 from .extension import db
-
 
 
 class User(db.Model):

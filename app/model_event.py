@@ -1,4 +1,5 @@
 from sqlalchemy import BigInteger, Column, String, event
+
 from .crypto import decrypt, encrypt
 from .extension import db
 
